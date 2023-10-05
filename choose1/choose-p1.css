@@ -1,0 +1,102 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+
+body,
+html {
+  margin: 0;
+  background-color: black;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+  margin-right: 150px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+}
+
+input[type="radio"] + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: red;
+  transition: background 0.3s;
+}
+
+input[type="radio"]:checked + label:before {
+  background-color: #ffffff;
+}
+
+form {
+  color: white;
+  align-content: center;
+  font-size: x-large;
+  display: inline-grid;
+  align-content: space-between;
+  margin-top: 15px;
+  font-family: "Roboto";
+}
+
+.submit {
+  background-color: red;
+  height: 40px;
+  border-style: none;
+  width: 150px;
+  margin: 5px;
+  border-radius: 25px;
+  text-align-last: center;
+  text-align: center;
+  color: black;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xxx-large;
+}
+
+.center-text {
+  text-align: center;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+footer {
+  text-align: center;
+  margin-left: 200px;
+}
+
+.logo-1 {
+  width: 150px;
+  align-content: center;
+}
+
+@media (max-width: 450px) {
+  .container {
+    height: 82vh;
+  }
+
+  .logo-1 {
+    width: 125px;
+  }
+}
